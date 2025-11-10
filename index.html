@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Портфель</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand animated-logo">Мой Портфель</div>
+      <ul class="nav-menu">
+        <li><a href="#" data-target="home">Главная</a></li>
+        <li><a href="#" data-target="portfolio">Портфолио</a></li>
+        <li><a href="#" data-target="contact">Контакты</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Основные секции -->
+  <main class="main-content">
+    <section id="home" class="section active">
+      <div class="hero">
+        <h1>Привет, я Иван</h1>
+        <p>Веб-разработчик и дизайнер</p>
+      </div>
+      <div class="about-section">
+        <div class="container">
+          <img src="https://via.placeholder.com/300x300" alt="Фото разработчика" class="profile-img">
+          <div class="about-text">
+            <h2>Обо мне</h2>
+            <p>Я веб-разработчик с опытом в создании адаптивных и удобных интерфейсов. Любой проект я начинаю с изучения задачи и целевой аудитории.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>Портфолио</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="https://via.placeholder.com/400x250" alt="Сайт-портфолио">
+          <h3>Сайт-портфолио</h3>
+          <p>Адаптивный сайт с анимациями и формой обратной связи</p>
+          <div class="tech-bar">
+            <div class="tech" style="width: 70%; background-color: #f1c40f;">HTML (70%)</div>
+            <div class="tech" style="width: 15%; background-color: #3498db;">CSS (15%)</div>
+            <div class="tech" style="width: 15%; background-color: #e74c3c;">JS (15%)</div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/400x250" alt="Телеграм-бот">
+          <h3>Телеграм-бот</h3>
+          <p>Бот для управления задачами с базой данных</p>
+          <div class="tech-bar">
+            <div class="tech" style="width: 95%; background-color: #306998;">Python (95%)</div>
+            <div class="tech" style="width: 5%; background-color: #6c757d;">Other (5%)</div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/400x250" alt="Игра на Python">
+          <h3>Игра на Python</h3>
+          <p>Игра "Змейка" с GUI и рекордами</p>
+          <div class="tech-bar">
+            <div class="tech" style="width: 100%; background-color: #306998;">Python (100%)</div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/400x250" alt="Сайт-магазин">
+          <h3>Сайт-магазин</h3>
+          <p>Интернет-магазин с корзиной и оплатой</p>
+          <div class="tech-bar">
+            <div class="tech" style="width: 60%; background-color: #f1c40f;">HTML (60%)</div>
+            <div class="tech" style="width: 25%; background-color: #3498db;">CSS (25%)</div>
+            <div class="tech" style="width: 15%; background-color: #e74c3c;">JS (15%)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Контакты</h2>
+      <div class="contact-container">
+        <div class="contact-links">
+          <a href="https://vk.com/oh_padla" target="_blank" class="contact-link vk">
+            <span class="icon"></span>
+            <span class="label">@oh_padla</span>
+          </a>
+          <a href="https://t.me/DeenFoool" target="_blank" class="contact-link telegram">
+            <span class="icon"></span>
+            <span class="label">@DeenFoool</span>
+          </a>
+          <a href="mailto:salumbek.den@gmail.com" class="contact-link gmail">
+            <span class="icon"></span>
+            <span class="label">salumbek.den@gmail.com</span>
+          </a>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Иван Иванов. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
